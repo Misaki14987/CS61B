@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 
 import static com.google.common.truth.Truth.assertWithMessage;
-import static game2048logic.TestUtils.checkTilt;;
+import static game2048logic.TestUtils.checkTilt;
 
 @Timeout(value = 60, threadMode = Timeout.ThreadMode.SEPARATE_THREAD)
 public class TestMultipleMoves {
@@ -25,8 +25,9 @@ public class TestMultipleMoves {
      */
 
 
-
-    /** Will test multiple moves on the Model. */
+    /**
+     * Will test multiple moves on the Model.
+     */
     @Test
     @Tag("multiple-moves")
     @DisplayName("Multiple moves")
@@ -79,7 +80,9 @@ public class TestMultipleMoves {
         }, 16), Side.SOUTH);
     }
 
-    /** Will test multiple moves on the Model that end the game. */
+    /**
+     * Will test multiple moves on the Model that end the game.
+     */
     @Test
     @Tag("multiple-moves")
     @DisplayName("Multiple moves and end behavior")
@@ -118,7 +121,9 @@ public class TestMultipleMoves {
                 + model).that(model.gameOver()).isTrue();
     }
 
-    /** Will test multiple moves on the Model. */
+    /**
+     * Will test multiple moves on the Model.
+     */
     @Test
     @Tag("multiple-moves")
     @DisplayName("Multiple Moves 2")

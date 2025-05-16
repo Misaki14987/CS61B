@@ -2,23 +2,35 @@ package game2048rendering;
 
 import game2048logic.Model;
 
-/** The main class for the 2048 game.
- *  @author P. N. Hilfinger
+/**
+ * The main class for the 2048 game.
+ *
+ * @author P. N. Hilfinger
  */
 public class Main {
-    /** Probability of choosing 2 as random tile (as opposed to 4). */
+    /**
+     * Probability of choosing 2 as random tile (as opposed to 4).
+     */
     static final double TILE2_PROBABILITY = 0.9;
 
-    /** Number of squares on the side of a board. */
+    /**
+     * Number of squares on the side of a board.
+     */
     static final int BOARD_SIZE = 4;
 
-    /** Random seed. Ignored if 0. */
+    /**
+     * Random seed. Ignored if 0.
+     */
     static final long RANDOM_SEED = 0;
 
-    /** If true, the custom start is used. Otherwise, the board starts off blank. */
+    /**
+     * If true, the custom start is used. Otherwise, the board starts off blank.
+     */
     static final boolean USE_CUSTOM_START = false;
 
-    /** Custom starting state of the game. Useful for debugging. */
+    /**
+     * Custom starting state of the game. Useful for debugging.
+     */
     static final Model CUSTOM_START = new Model(new int[][]{
             {2, 0, 2, 128},
             {0, 0, 8, 0},
